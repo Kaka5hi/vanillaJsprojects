@@ -1,0 +1,77 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    font-family: monospace, Impact, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling for both the cards */
+.cards {
+    width: 450px;
+    padding: 10px;
+    height: 250px;
+    background-color: lightblue;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 0 black;
+}
+
+.first-card {
+    position: relative;
+
+}
+.first-card .rating-buttons {
+    padding: 10px;
+}
+
+.first-card .rating-buttons button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 50px;
+    border: none;
+    font-family: inherit;
+
+}
+
+.first-card .rating-buttons button:hover {
+    background-color: lightsalmon;
+    transform: scale(1.3);
+    box-shadow: 2px 2px 0 0 black;
+}
+
+.first-card .submit-btn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    font-family: inherit;
+}
+
+.first-card .submit-btn:hover {
+    background-color: lightsalmon;
+    transform: scale(1.2);
+    box-shadow: 2px 2px 0 0 black;
+
+}
+
+.second-card {
+    display: none;
+    position: absolute;
+}
+
+.second-card  p {
+    margin: 20px 5px;
+}
