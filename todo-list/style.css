@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffb65f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #fbf5f0;
+    box-shadow: 8px 8px 0 0 #35200e;
+    border-radius: 10px;
+}
+
+.header-container {
+    padding: 10px;
+}
+
+.header-container input {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    text-transform: capitalize;
+    border-radius: 35px;
+    margin-right: 10px;
+    font-family: inherit;
+}
+
+
+.header-container button {
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: chocolate;
+    color: #fff;
+    transform: box-shadow;
+}
+
+.header-container button:hover {
+    border: 2px solid #1a1007;
+    background-color: rgb(224, 135, 70);
+    transition: ease-out 200ms;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 0 0 black;
+}
+
+
+.task {
+    padding: 10px;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #1d1d1d;
+}
+
+.task p {
+    font-size: 18px;
+    font-weight: 500;
+    flex: 3;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+
+.task.task-complete p{
+    text-decoration-line: line-through;
+}
+
+.complete-btn{
+    background-color: #0f0;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 35px;
+    flex: 1;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.complete-btn:hover {
+    background-color: #050;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: ease-out 200ms;
+box-shadow: 5px 5px 0 0 black;
+}
+
+.delete-btn{
+    background-color: rgba(255, 0, 0, 0.74);
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 35px;
+    flex: 1;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.delete-btn:hover {
+    background-color: #880d00;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: ease-out 200ms;
+box-shadow: 5px 5px 0 0 black;
+}
