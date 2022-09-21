@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+:root {
+    --main-font-family: 'Rubik', sans-serif;
+    --main-body-bg-color: hsl(226, 43%, 10%);
+    --cards-bg-color: hsl(235, 46%, 20%);
+    --hover-state-bg-color: hsl(235, 45%, 61%);
+    --text-color: hsl(236, 100%, 87%);
+    --testing-border: 1px solid white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-body-bg-color);
+    font-family: var(--main-font-family);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.main-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.user-card {
+    border-radius: 15px;
+    background-color: var(--cards-bg-color);
+}
+
+.top-section {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.user-card-img {
+    margin: 10px 0;
+}
+
+.user-card-img img {
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.user-card-info {
+    padding: 30px 0;
+}
+
+.user-card-info p {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.user-card-info h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.bottom-section {
+    padding: 10px 20px;
+}
+
+.user-card-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-card-btn button {
+    width: 100px;
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+    text-transform: capitalize;
+    background-color: transparent;
+    font-family: inherit;
+    color: var(--text-color);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.user-card-btn button:hover {
+    color: #fff;
+}
+
+.cards-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    'card card card'
+    'card card card';
+}
+
+.card {
+    border-radius: 15px;
+    display: flex;
+}
+
+
+.card:nth-child(1) {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(./images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.card:nth-child(2) {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(./images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.card:nth-child(3) {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(./images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.card:nth-child(4) {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(./images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.card:nth-child(5) {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(./images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.card:nth-child(6) {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(./images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.card-info {
+    border-radius: 10px;
+    background-color: var(--cards-bg-color);
+    width: 100%;
+    margin-top: 40px;
+}
+
+.card-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.card-heading h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-heading div {
+    cursor: pointer;
+}
+
+.card-time {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+.card-time h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+.card-time p {
+    color: var(--text-color);
+}
+
+.daily-card,
+.weekly-card,
+.monthly-card
+{
+    position: absolute;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
