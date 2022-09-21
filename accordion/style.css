@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600;700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #ff9f1c;
+  --main-text-color: #fdfffc;
+  --shadow-color: #001219;
+  --container-bg-color: #011627;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-bg-color);
+  color: var(--main-text-color);
+  min-height: 100vh;
+}
+
+.container {
+  width: 60%;
+  border: transparent;
+  outline: 5px solid var(--main-text-color);
+  box-shadow: 15px 15px 0 0 var(--shadow-color);
+  background-color: var(--container-bg-color);
+  padding: 20px;
+}
+
+.container-heading h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.question-container {
+  padding: 20px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--main-text-color);
+  padding: 10px 0;
+}
+
+.question button {
+  padding: 8px;
+  background-color: var(--main-text-color);
+  color: var(--shadow-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.question button:hover {
+  transform: scale(1.2);
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  background-color: var(--main-text-color);
+  color: var(--shadow-color);
+  font-weight: 600;
+}
+
+/* This one is for the simple way */
+.show {
+  display: block;
+}
+
+/*using this one for traversing the DOM*/
+.answer-show .answer {
+  display: block;
+}
+
+/* this one for using the selectors inside element*/
+.show-answer + .answer {
+  display: block;
+}
