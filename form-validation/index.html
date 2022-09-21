@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Javascript Form Validation</title>
+</head>
+
+<body>
+  <div class="container">
+    <form class="form" id="form">
+      <div class="form-control">
+        <input type="text" placeholder="First Name" id="first-name">
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <input type="text" placeholder="Last Name" id="last-name">
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <input type="email" placeholder="Email" id="e-mail">
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <input type="password" placeholder="Password" id="password">
+        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <small>Error message</small>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
